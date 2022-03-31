@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap");
+
+/*
+---Typography:
+ ---FONT SIZE SYTEM (px)
+
+*/
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  color: #333;
+}
+.primary-header {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+.btn:link,
+.btn:visited {
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #cf711f;
+}
+.btn-primary {
+  background-color: #e67e22;
+  color: white;
+}
+.btn-secondary {
+  background-color: #fdf2e9;
+  color: #333;
+  background-color: white;
+}
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px white;
+}
+.nav .cta-nav:hover {
+  color: white;
+}
+/*UTILITY CLASS*/
+.mr-right {
+  margin-right: 1.6rem !important;
+}
+.mr-top {
+  margin-top: 9.6rem;
+}

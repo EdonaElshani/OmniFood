@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap');
+
+/*NGJYRAT: 
+TINTS: #fdf2e9  #f8d8bd  #eea564
+SHADES: #170d03  #a15818    #5c320e
+*/
+/*******HEADER********/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 2.4rem;
+  background-color: #fdf2e9;
+  font-weight: 700;
+  align-items: center;
+}
+
+.logo img {
+  width: 12.8rem;
+}
+.nav-bar .nav {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  align-items: center;
+}
+.menu:link,
+.menu:visited {
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+.menu:hover,
+.menu:active {
+  text-decoration: none;
+  color: #cf711f;
+}
+
+.btn.cta-nav{
+  padding: 0.9rem 1.8rem;
+  color: white;
+}
+
+/*******HERO********/
+.hero-section {
+  background-color: #fdf2e9;
+  padding: 1.2rem 3.2rem;
+}
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9.6rem 8rem;
+  align-items: center;
+  max-width: 130rem;
+}
+
+.hero-header-description{
+font-size: 2rem;
+line-height: 1.5;
+letter-spacing: 1.3px;
+margin-bottom: 3.2rem
+}
+
+.hero-image img {
+  max-width: 100%;
+}
+.costumer{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem
+}
+.costumer-img img{
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  margin-left: -1rem;
+  border: 3px solid #fdf2e9;
+}
+.costumer-img img:last-child{
+  margin-right: 0px;
+}
+
+.costumer-description{
+font-size: 1.8rem;
+font-weight: 500;
+}
+.delivered-meal{
+color: #cf711f;
+}
