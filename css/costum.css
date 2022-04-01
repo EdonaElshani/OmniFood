@@ -3,6 +3,8 @@
 /*NGJYRAT: 
 TINTS: #fdf2e9  #f8d8bd  #eea564
 SHADES: #170d03  #a15818    #5c320e
+border radius: 8px;
+shadow: 
 */
 /*******HEADER********/
 .header {
@@ -24,7 +26,7 @@ SHADES: #170d03  #a15818    #5c320e
   font-size: 1.8rem;
   font-weight: 500;
   align-items: center;
-  
+
 }
 .menu:link,
 .menu:visited {
@@ -89,3 +91,50 @@ font-weight: 500;
 .delivered-meal{
 color: #cf711f;
 }
+
+/*******HERO END********/
+
+/*******STEPS START********/
+
+.steps{
+  padding: 0 4.8rem;
+}
+.steps-header{
+  padding: 9.6rem 0 6.4rem 0;
+}
+.steps-header-description{
+font-weight: 600;
+text-transform: uppercase;
+font-size: 1.6rem;
+color: #cf711f;
+}
+.steps-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.4rem 4.8rem;
+  justify-items: center;
+}
+
+.steps-content img{
+  width: 35%; 
+}
+.step-no {
+font-size: 6.2rem;
+font-weight: 700;
+color: #ddd;
+}
+.step-description{
+font-size: 1.8rem;
+letter-spacing: 1.05px;
+line-height: 1.5;
+}
+
+.step-img{
+  display: flex;
+  justify-content: center;
+}
+.step-title{
+  margin-bottom: 3.2rem;
+}
+
+/*******STEPS END********/
