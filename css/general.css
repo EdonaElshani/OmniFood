@@ -18,6 +18,14 @@ body {
   font-family: "Rubik", sans-serif;
   color: #333;
 }
+.btn-lg{
+  font-size: 1.6rem;
+  padding: 0.8rem 1.6rem;
+}
+.btn-sm{
+  font-size: 1.8rem;
+  padding: 1.2rem 2.4rem;
+}
 .primary-header {
   font-size: 5.2rem;
   line-height: 1.05;
@@ -52,9 +60,6 @@ body {
 .btn-secondary:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px white;
-}
-.nav .cta-nav:hover {
-  color: white;
 }
 /*UTILITY CLASS*/
 .mr-right {
