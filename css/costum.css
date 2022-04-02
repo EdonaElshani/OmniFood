@@ -93,6 +93,27 @@ shadow:
 
 /*******HERO END********/
 
+/*******FEATURE START********/
+
+.feature-in {
+text-align: center;
+}
+.feature-img{
+  display: flex;
+  justify-content: space-around;
+}
+.feature-img img{
+  height: 3.2rem;
+  filter: brightness(1%);
+  opacity: 50%;
+}
+.feature-in-header .steps-header-description{
+  display: block;
+  color: #999;
+  margin-bottom: 3.2rem;
+}
+/*******FEATURE END********/
+
 /*******STEPS START********/
 
 .steps {
@@ -106,12 +127,6 @@ shadow:
   text-transform: uppercase;
   font-size: 1.6rem;
   color: #cf711f;
-}
-.steps-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 6.4rem 4.8rem;
-  justify-items: center;
 }
 
 .steps-content img {
