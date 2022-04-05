@@ -240,7 +240,7 @@ shadow:
   text-align: center;
   
 }
-.meals-recipes{
+.meals-recipes {
 font-size: 1.6rem;
 color: #e67e22;
 letter-spacing: 1.05px;
@@ -249,8 +249,8 @@ border-bottom: 1px solid currentColor;
 font-weight: 500;
 display: block;
 padding: 0.4rem;
-
 }
+
 
 .meals-recipes:hover{
   border-bottom: 1px solid transparent;
