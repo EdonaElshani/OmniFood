@@ -213,46 +213,120 @@ shadow:
 /*******TESTIMONIALS END********/
 
 /*******GALLERY START********/
-.gallery{
+.gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem 2.4rem;
 }
-.container-img{
-
+.container-img {
   overflow: hidden;
 }
-.gallery img{
+.gallery img {
   width: 100%;
   transition: all 0.3s;
 }
-.container-img img:hover{
+.container-img img:hover {
   transform: scale(1.05);
 }
 /*******GALLERY END********/
 
 /*******MEALS START********/
 
-.meals-header, .meals-recipes{
+.meals-header,
+.meals-recipes {
   text-align: center;
 }
-.meals-footer{
+.meals-img img {
+  width: 100%;
+}
+.meals-header {
+  margin-bottom: 8rem;
   text-align: center;
-  
+}
+.labeles span {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 5rem;
+  font-weight: 500;
+  color: #333;
+}
+.labeles {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+.meals-content {
+  padding: 0.8rem 1.2rem;
+}
+.meals-content .ternary-header {
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+.vegetarian {
+  background-color: #51cf66;
+}
+.vegan {
+  background-color: #94d82d;
+}
+.paleo {
+  background-color: #fcc419;
+}
+.meal-details p {
+  font-size: 1.8rem;
+  display: flex;
+  gap: 1rem;
+}
+.meal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.meals-recepie {
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 70%;
+  box-shadow: 0 0 3px rgba(51, 51, 51, 30%);
+}
+.meals-recipes .first {
+  justify-self: end;
+}
+.meals-recipies .second {
+  justify-self: start;
+}
+.meals-recepie:hover{
+  transform: translateY(-1rem);
+  transition: all 0.3s ease;
+}
+strong {
+  font-weight: 500;
+}
+.meals-diet div {
+  display: flex;
+  font-size: 1.8rem;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.meals-footer {
+  text-align: center;
 }
 .meals-recipes {
-font-size: 1.6rem;
-color: #e67e22;
-letter-spacing: 1.05px;
-text-decoration: none;
-border-bottom: 1px solid currentColor;
-font-weight: 500;
-display: block;
-padding: 0.4rem;
+  font-size: 1.6rem;
+  color: #e67e22;
+  letter-spacing: 1.05px;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  font-weight: 500;
+  display: block;
+  padding: 0.4rem;
 }
-
-
-.meals-recipes:hover{
+ion-icon {
+  color: #cf711f;
+}
+.meals-body{
+  margin-bottom: 8rem;
+}
+.meals-recipes:hover {
   border-bottom: 1px solid transparent;
 }
 /*******MEALS END********/

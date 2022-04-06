@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/costum.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>OmniFood</title>
   </head>
   <body>
@@ -117,8 +119,6 @@
             <p>Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.</p>
           </div>
           </div>
-          
-             
           <div class="step-three-content">
             <div class="step-no">03</div>
           <div class="step-title">
@@ -228,10 +228,78 @@
   <span class="steps-header-description">Meals</span>
 <h2 class="secondary-header">Omnifood AI chooses from 5,000+ recipes</h2>
 </div>
-<div class="meals-body"></div>
+<div class="meals-body grid grid-3">
+  <div class="meals-recepie first">
+    <div class="meals-img">
+      <img src="img/meals/meal-1.jpg" alt="Meal 1">
+    </div>
+    <div class="meals-content">
+      <div class="labeles"><span class="vegetarian">Vegetarian</span>
+      </div>
+      <h3 class="ternary-header">Japanese Gyozas</h3>
+      <div class="meal-details">
+      <p><ion-icon name="flame-outline"></ion-icon>
+      <span><strong>650</strong> calories</span>
+      </p>
+      <p><ion-icon name="restaurant-outline"></ion-icon>
+        <span>NutriScore &reg; <strong>74</strong></p></span>
+      <p><ion-icon name="star-outline"></ion-icon>
+        <span><strong>4.9</strong> rating (537)</p></span>
+
+      </div>
+    </div>
+  </div>
+  <div class="meals-recepie second">
+    <div class="meals-img">
+      <img src="img/meals/meal-2.jpg" alt="Meal 2">
+    </div>
+    <div class="meals-content">
+      <div class="labeles">
+        <span class="vegan">Vegan</span>
+      <span class="paleo">Paleo</span>
+      </div>
+      <h3 class="ternary-header">Avocado Salad</h3>
+      <div class="meal-details">
+      <p><ion-icon name="flame-outline"></ion-icon>
+      <span><strong>400</strong> calories</span>
+      </p>
+      <p><ion-icon name="restaurant-outline"></ion-icon>
+        <span>NutriScore &reg; <strong>92</strong></p></span>
+      <p><ion-icon name="star-outline"></ion-icon>
+        <span><strong>4.8</strong> rating (414)</p></span>
+    </div>
+  </div>
+ 
+</div>
+<div class="meals-diet">
+  <h3 class="ternary-header">Work with any diet:</h3>
+  <div>
+<p><ion-icon name="checkmark-outline"></ion-icon>
+  <span>Vegetarian</span></p>
+<p><ion-icon name="checkmark-outline"></ion-icon>
+  <span>Vegan</span></p>
+<p><ion-icon name="checkmark-outline"></ion-icon>
+ <span>Pescatarian</span></p>
+<p><ion-icon name="checkmark-outline"></ion-icon>
+<span>Gluten-free</span></p>
+<p><ion-icon name="checkmark-outline"></ion-icon>
+  <span>Lactose-free</span></p>
+<p><ion-icon name="checkmark-outline"></ion-icon>
+  <span>Keto</span></p>
+<p><ion-icon name="checkmark-outline"></ion-icon>
+  <span>Paleo</span></p>
+<p><ion-icon name="checkmark-outline"></ion-icon>
+  <span>Low FODMAP</span></p>
+<p><ion-icon name="checkmark-outline"></ion-icon>
+  <span>Kid-friendly</span></p>
+</div>
+</div>
+</div>
+
 <div class="meals-footer">
   <a class="meals-recipes" href="#">See all recipes &rarr;</a>
 </div>
+
   </section>
   </main>
   </body>
