@@ -294,7 +294,7 @@ shadow:
 .meals-recipies .second {
   justify-self: start;
 }
-.meals-recepie:hover{
+.meals-recepie:hover {
   transform: translateY(-1rem);
   transition: all 0.3s ease;
 }
@@ -323,10 +323,189 @@ strong {
 ion-icon {
   color: #cf711f;
 }
-.meals-body{
+.meals-body {
   margin-bottom: 8rem;
 }
 .meals-recipes:hover {
   border-bottom: 1px solid transparent;
 }
 /*******MEALS END********/
+
+/*******PRICE START********/
+.pricing-body {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.pricing-card-header {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+.pricing-header {
+  margin-bottom: 6.4rem;
+}
+
+.pricing-card-body {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: relative;
+  padding: 6.4rem 4.8rem;
+  border-radius: 8px;
+  margin-bottom: 3.2rem;
+  border: 2px solid #fdf2e9;
+}
+.pricing-card-body p {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.pricing-card-body .steps-header-description {
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+.price {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+.price span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0.6rem;
+}
+.pricing-header .steps-header-description {
+  margin-bottom: 2.4rem;
+  display: inline-block;
+}
+.pricing-footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-top: 4.8rem;
+  margin-bottom: 6.4rem;
+}
+.pricind-card-footer {
+  display: flex;
+  justify-content: center;
+}
+.pricing-card-body:last-child {
+  background-color: #fdf2e9;
+  overflow: hidden;
+}
+.pricing-card-body:last-child::after {
+  content: "Best Value";
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  position: absolute;
+  padding: 0.6rem 1rem;
+  font-weight: 500;
+  top: 2rem;
+  right: -5rem;
+  font-size: 1.6rem;
+  background-color: #fcc419;
+  transform: rotate(45deg);
+}
+
+/*******PRICE END********/
+
+/*****FEATURES START******/
+
+.features {
+  display: flex;
+  gap: 3.2rem;
+  padding: 4.8rem;
+}
+.features ion-icon {
+  font-size: 3.6rem;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 4.8rem;
+}
+.features h3 {
+  margin-bottom: 2.4rem;
+  font-size: 2.4rem;
+}
+.features p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+/******FEATURES END******/
+
+/*******CTA START********/
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr, 1fr;
+  background-image: linear-gradient(to bottom right, #e67e22, #eea564);
+  color: #2e1907;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 9.6rem;
+}
+.cta-form {
+  padding: 4.8rem;
+}
+.cta *:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px #a15818;
+}
+
+.cta-image {
+  background-image: url(../img/eating.jpg);
+  background-size: cover;
+  opacity: 0.6;
+}
+.form {
+  margin-top: 4.8rem;
+}
+.form form {
+  display: grid;
+  grid-template-columns: 2fr, 1fr;
+  gap: 2.4rem 3.6rem;
+}
+.form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+.form-control input, 
+.form-control select{
+  border: none;
+  background-color: #fdf2e9;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+.btn{
+  border: none;
+  width: 100%;
+  align-self: end;
+}
+.btn-costum:hover{
+  background-color: #5c320e;
+  transition: all 0.3s ease;
+}
+.form-control button{
+padding: 1rem 3.2rem;
+width: 100%;
+background-color:#45260a;
+color: white;
+}
+/*******CTA END*********/
+
+/*******FOOTER START*********/
+
+
+
+
+/*******FOOTER END*********/

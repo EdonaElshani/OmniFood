@@ -73,10 +73,6 @@ margin-bottom: 1.6rem;
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px white;
 }
-/* .container{
-  width: 130rem;
-  margin: 0 auto;
-} */
 .grid{
   display: grid;
   justify-items: center;
