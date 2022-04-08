@@ -230,41 +230,65 @@ shadow:
 }
 /*******GALLERY END********/
 
-/*******MEALS START********/
-
-.meals-header,
-.meals-recipes {
+/* *************Meals Start ***************** */
+.meals-header {
   text-align: center;
 }
-.meals-img img {
-  width: 100%;
+.meals-recipe {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  max-width: 70%;
+  box-shadow: 0 0 3px rgb(51, 51, 51, 0.3);
+  justify-self: end;
+}
+.meals-recipe .first {
+  justify-self: end;
+}
+.meals-recipe .second {
+  justify-self: start;
+}
+.meals-recipes {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #e67e22;
+  letter-spacing: 1.05px;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  font-weight: 500;
+  padding: 0.4rem;
+}
+.meals-recipe:hover {
+  transform: translateY(-1rem);
+  transition: 0.3s ease;
+}
+.meals-recipes:hover {
+  border-bottom: 1px solid transparent;
+}
+.meals-header span {
+  display: block;
+  margin-bottom: 2.4rem;
 }
 .meals-header {
-  margin-bottom: 8rem;
   text-align: center;
+  margin-bottom: 8rem;
 }
-.labeles span {
+.meals-body {
+  margin-bottom: 8rem;
+}
+/* .meals-header,
+.meals-recipes {
+  text-align: center;
+} */
+.labels span {
   display: inline-block;
-  padding: 0.4rem 0.8rem;
-  font-size: 1rem;
-  border-radius: 5rem;
+  font-size: 0.8rem;
   font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5rem;
   color: #333;
 }
-.labeles {
-  display: flex;
-  gap: 0.4rem;
-  margin-bottom: 1.6rem;
-}
-.meals-content {
-  padding: 0.8rem 1.2rem;
-}
-.meals-content .ternary-header {
-  font-size: 1.8rem;
-  margin-bottom: 1.8rem;
-}
 .vegetarian {
-  background-color: #51cf66;
+  background-color: #52cf66;
 }
 .vegan {
   background-color: #94d82d;
@@ -272,7 +296,20 @@ shadow:
 .paleo {
   background-color: #fcc419;
 }
-.meal-details p {
+.labels {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+.meals-content .ternary-header {
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+.meals-img img {
+  width: 100%;
+}
+.meal-details p,
+.meals-diet p {
   font-size: 1.8rem;
   display: flex;
   gap: 1rem;
@@ -282,123 +319,50 @@ shadow:
   flex-direction: column;
   gap: 1.6rem;
 }
-.meals-recepie {
-  border-radius: 8px;
-  overflow: hidden;
-  max-width: 70%;
-  box-shadow: 0 0 3px rgba(51, 51, 51, 30%);
-}
-.meals-recipes .first {
-  justify-self: end;
-}
-.meals-recipies .second {
-  justify-self: start;
-}
-.meals-recepie:hover {
-  transform: translateY(-1rem);
-  transition: all 0.3s ease;
-}
-strong {
-  font-weight: 500;
+.meals-content {
+  padding: 0.8rem 1.2rem;
 }
 .meals-diet div {
   display: flex;
-  font-size: 1.8rem;
   flex-direction: column;
   gap: 1.6rem;
-}
-.meals-footer {
-  text-align: center;
-}
-.meals-recipes {
-  font-size: 1.6rem;
-  color: #e67e22;
-  letter-spacing: 1.05px;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  font-weight: 500;
-  display: block;
-  padding: 0.4rem;
+  font-size: 1.8rem;
 }
 ion-icon {
   color: #cf711f;
 }
-.meals-body {
-  margin-bottom: 8rem;
-}
-.meals-recipes:hover {
-  border-bottom: 1px solid transparent;
-}
-/*******MEALS END********/
-
-/*******PRICE START********/
-.pricing-body {
-  display: flex;
-  justify-content: center;
-  gap: 3.2rem;
+.meals-footer {
+  text-align: center;
 }
 
-.pricing-card-header {
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-  font-size: 1.8rem;
+/* *************Meals End ***************** */
+
+/* *********Pricing & Features Start************** */
+/* *********Pricing Start************** */
+
+.pricing-header {
   margin-bottom: 4.8rem;
 }
-.pricing-header {
-  margin-bottom: 6.4rem;
+
+.pricing-header .step-header-description {
+  display: inline-block;
+  margin-bottom: 2.4rem;
 }
 
-.pricing-card-body {
-  font-size: 1.8rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  position: relative;
-  padding: 6.4rem 4.8rem;
-  border-radius: 8px;
-  margin-bottom: 3.2rem;
+.pricing-card {
   border: 2px solid #fdf2e9;
+  /* padding: 1.2rem 1.6rem; */
+  border-radius: 8px;
+  padding: 6.4rem 4.8rem;
+  position: relative;
 }
-.pricing-card-body p {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-}
-.pricing-card-body .steps-header-description {
-  font-weight: 500;
-  font-size: 1.8rem;
-  margin-bottom: 0.8rem;
-}
-.price {
-  font-size: 3.6rem;
-  font-weight: 600;
-}
-.price span {
-  font-size: 1.8rem;
-  font-weight: 500;
-  padding: 0.6rem;
-}
-.pricing-header .steps-header-description {
-  margin-bottom: 2.4rem;
-  display: inline-block;
-}
-.pricing-footer {
-  display: flex;
-  justify-content: center;
-  font-size: 1.8rem;
-  margin-top: 4.8rem;
-  margin-bottom: 6.4rem;
-}
-.pricind-card-footer {
-  display: flex;
-  justify-content: center;
-}
-.pricing-card-body:last-child {
+
+.pricing-card:last-child {
   background-color: #fdf2e9;
   overflow: hidden;
 }
-.pricing-card-body:last-child::after {
+
+.pricing-card:last-child::after {
   content: "Best Value";
   text-align: center;
   display: inline-block;
@@ -413,15 +377,80 @@ ion-icon {
   transform: rotate(45deg);
 }
 
-/*******PRICE END********/
+.pricing-body {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+}
 
-/*****FEATURES START******/
+.pricing-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.pricing-card .step-header-description {
+  font-weight: 500;
+  font-size: 1.4rem;
+  /* letter-spacing: 1px; */
+  margin-bottom: 0.8rem;
+}
+
+.pricing-card .price {
+  font-size: 5.2rem;
+  font-weight: 600;
+}
+
+.price span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0.6rem;
+}
+
+.pricing-card-body {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.pricing-card-body p {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  /* letter-spacing: 0.9px; */
+}
+
+.pricing-card-body ion-icon {
+  font-size: 2.4rem;
+}
+
+.pricing-card-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 4.8rem 0 6.4rem 0;
+}
+
+/* *********Pricing End************** */
+
+/* *********Features Start************** */
 
 .features {
   display: flex;
   gap: 3.2rem;
   padding: 4.8rem;
 }
+
 .features ion-icon {
   font-size: 3.6rem;
   background-color: #fdf2e9;
@@ -429,83 +458,125 @@ ion-icon {
   border-radius: 50%;
   margin-bottom: 4.8rem;
 }
+
 .features h3 {
   margin-bottom: 2.4rem;
   font-size: 2.4rem;
 }
+
 .features p {
   font-size: 1.8rem;
   line-height: 1.5;
 }
 
-/******FEATURES END******/
+/* *********Features End************** */
 
-/*******CTA START********/
+/* *********Pricing & Features End************** */
+
+/* *********CTA section Start************** */
 
 .cta {
   display: grid;
-  grid-template-columns: 2fr, 1fr;
+  grid-template-columns: 2fr 1fr;
   background-image: linear-gradient(to bottom right, #e67e22, #eea564);
-  color: #2e1907;
-  border-radius: 12px;
+  font-size: 1.8rem;
+  color: #45260a;
+  border-radius: 1.2rem;
   overflow: hidden;
   margin-bottom: 9.6rem;
 }
+
 .cta-form {
   padding: 4.8rem;
 }
-.cta *:focus{
-  outline: none;
-  box-shadow: 0 0 0 3px #a15818;
-}
 
-.cta-image {
-  background-image: url(../img/eating.jpg);
-  background-size: cover;
-  opacity: 0.6;
-}
 .form {
   margin-top: 4.8rem;
 }
+
 .form form {
   display: grid;
-  grid-template-columns: 2fr, 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2.4rem 3.6rem;
 }
+
 .form label {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 1.6rem;
 }
-.form-control input, 
-.form-control select{
+
+.form-control input,
+.form-control select {
   border: none;
   background-color: #fdf2e9;
   width: 100%;
-  border-radius: 8px;
   padding: 1.2rem;
+  border-radius: 8px;
 }
-.btn{
+
+.btn-custom {
   border: none;
+  margin-top: auto;
+  padding: 1rem 3.2rem;
   width: 100%;
+  background-color: #45260a;
+  color: white;
+  transition: all 0.3s ease;
+  margin-top: 2em;
+}
+
+.btn-custom:hover {
+  background-color: #5c320e;
+  cursor: pointer;
+}
+
+.from-control:last-child {
   align-self: end;
 }
-.btn-costum:hover{
-  background-color: #5c320e;
-  transition: all 0.3s ease;
+
+.cta-img {
+  background-image: url(../img/eating.jpg);
+  background-size: cover;
+  opacity: 50%;
 }
-.form-control button{
-padding: 1rem 3.2rem;
-width: 100%;
-background-color:#45260a;
-color: white;
+
+/* *********CTA section End************** */
+
+/* *********Footer Start************** */
+
+.footer{
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
-/*******CTA END*********/
+.footer ion-icon{
+  font-size: 3rem;
+  filter:grayscale();
+  margin-left: 2rem;
+}
+.footer a{
+  font-size: 1.6rem;
+  color: #555;
+  text-decoration: none;
+}
+.footer a:hover{
+  color: #222;
+}
+.footer-box-1 img{
+width: 13vw;
+}
 
-/*******FOOTER START*********/
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  font-size: 1.6rem;
+  color: #555;
+  justify-content: space-between;
+}
+.flex-column .paragraph{
+  justify-self: flex-end;
+}
 
-
-
-
-/*******FOOTER END*********/
+/* *********Footer End************** */
