@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/costum.css" />
+    <link rel="stylesheet" href="css/media-queries.css">
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -32,6 +33,10 @@
           </li>
         </ul>
       </div>
+      <button class="mobile-nav">
+        <ion-icon class="nav-icon" name="menu-outline"></ion-icon>
+        <ion-icon  class="nav-icon" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -121,7 +126,7 @@
           <div class="step-img">
             <img src="img/app/app-screen-1.png" alt="Iphone meal menu" />
           </div>
-          <div class="step-img">
+          <div class="step-img img-2">
             <img src="img/app/app-screen-2.png" alt="Iphone featurebox" />
           </div>
           <div class="step-two-content">
@@ -150,7 +155,7 @@
               </p>
             </div>
           </div>
-          <div class="step-img">
+          <div class="step-img img-3">
             <img src="img/app/app-screen-3.png" alt="Iphone delivery" />
           </div>
         </div>
@@ -217,7 +222,7 @@
               </figure>
             </div>
           </div>
-          <div class="gallery grid grid-3">
+          <div class="gallery grid grid-3 grid-6">
             <div class="container-img">
               <img src="img/gallery/gallery-1.jpg" alt="Meal 1" />
             </div>
@@ -375,7 +380,7 @@
       <section class="pricing-features container pt-lg">
         <div class="pricing">
           <div class="pricing-header">
-            <span class="step-header-description">Pricing</span>
+            <span class="steps-header-description">Pricing</span>
             <h2 class="secondary-header">
               Eating well without breaking the bank
             </h2>
@@ -542,10 +547,11 @@
           <p>Copyright © 2022 by Omnifood, Inc. All rights reserved.</p>
         </div>
         <div class="footer-box-2 flex-column">
+
           <h4>Contact us</h4>
           <a href="#">623 Harrison St., 2nd Floor, San Francisco, CA 94107</a>
-          <a href="#">415-201-6370</a>
-          <a href="#">hello@omnifood.com</a>
+          <a href="tel:415-201-6370">415-201-6370</a>
+          <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
         </div>
         <div class="footer-box-3 flex-column">
           <h4>Account</h4>

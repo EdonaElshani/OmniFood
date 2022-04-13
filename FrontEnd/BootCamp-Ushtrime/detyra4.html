@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <form>
+    <h1>Register</h1>
+    <div style = "margin: 7px">
+        <label for="name">First Name: </label>
+        <input type="text" name="Name" id="name" placeholder="John" required />
+    </div>
+    <div  style = "margin: 7px">
+      <label for="mbiemri">Last Name:</label>
+      <input
+        type="text" name="Mbiemri" id="mbiemri" placeholder="Smith" required />
+    </div>
+    <div  style = "margin: 7px">
+        <label>Gjinia:
+            <label for="male">Male</label>
+            <input type="radio" name="Gjinia" id="male" value="Male" />
+      
+            <label for="female">Female</label>
+            <input type="radio" name="Gjinia" id="female" value="Female" />
+      
+            <label for="other">Other</label>
+            <input type="radio" name="Gjinia" id="other" value="Other" />
+        </label>
+      
+    </div>
+<div style = "margin: 7px">
+    <label for="email">Email: </label>
+    <input
+      type="email"
+      name="Email"
+      id="email"
+      placeholder="your email"
+      required />
+</div>
+<div  style = "margin: 7px">
+    <label for="password">Password: </label>
+    <input
+      type="password"
+      name="Password" id="password" placeholder="your password"
+      min="5" max="10"
+      required pattern=".{5,10}" required title = "password must contain 5 to 10 characters">
+</div>
+    
+    <div  style = "margin: 7px">
+      <label
+        >Ditelindja:
+        <select name = "Day">
+          <option>Dita</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select>
+        <select name = "Month">
+          <option value="0">Muaji</option>
+          <option value="1">Janar</option>
+          <option value="2">Shkurt</option>
+          <option value="3">Mars</option>
+          <option value="4">Prill</option>
+          <option value="5">Maj</option>
+          <option value="6">Qershor</option>
+          <option value="7">Korrik</option>
+          <option value="8">Gusht</option>
+          <option value="9">Shtator</option>
+          <option value="10">Tetor</option>
+          <option value="11">Nentor</option>
+          <option value="12">Dhjetor</option>
+        </select>
+        <select name="Year">
+            <option>Viti</option>
+            <option>1999</option>
+            <option>1998</option>
+            <option>1997</option>
+            <option>1996</option>
+            <option>1995</option>
+            
+        </select>
+      </label>
+    </div>
+    <div  style = "margin: 7px">
+        <label for="agree">I agree to the terms and conditions</label>
+        <input type="checkbox" name="Agree" id="agree" />
+    </div>
+    <div  style = "margin: 7px">
+        <input type="submit">
+    </div>       
+    </form>
+  </body>
+</html>

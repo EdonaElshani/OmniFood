@@ -1,0 +1,13 @@
+:root {
+    font-size: calc(0.5em + 1vw);
+    --color: rgb(124, 75, 15);
+   }
+
+ul > li {
+    font-size: calc(0.4em + 1vw);
+    color: var(--color, red); /*second option*/
+}
+img {
+    width: 200px;
+    height: 200px;
+}

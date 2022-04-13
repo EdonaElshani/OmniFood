@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    margin: auto;
+}
+table{
+    margin: auto;
+}
+td{
+    height: 80px;
+    width: 80px;  
+}
+#td-1, #td-2, #td-4, #td-5{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#td-3, #td-6{
+    border-bottom: 2px solid black;;
+}
+#td-7, #td-8{
+    border-right: 2px solid black;
+}
+
