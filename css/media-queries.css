@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
   }
+
 }
 @media (max-width: 75em) {
   html {
@@ -33,6 +34,52 @@
   }
   .meals-body.grid {
     column-gap: 1.8rem;
+  }
+  header {
+    position: relative;
+  }
+  .nav-bar {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.93);
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden; /**Qe mos me u shfaq per screen-readers**/
+    z-index: 1;
+  }
+  .open-nav .nav-bar{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    left: 0;
+  }
+  .open-nav ion-icon[name="close"]{
+    display: block;
+  }
+  .mobile-nav{
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    display: block;
+  }
+  .nav-bar .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.2rem;
+    gap: 2.4rem;
+  }
+  
+  
+  .open-nav ion-icon[name="menu"]{
+    display: none;
   }
 }
 
@@ -107,7 +154,8 @@
 }
 
 @media (max-width: 33em) {
-  .grid-3, .grid-2 {
+  .grid-3,
+  .grid-2 {
     grid-template-columns: 1fr;
     row-gap: 3.2rem;
   }
@@ -117,49 +165,50 @@
   .pricing-body {
     flex-wrap: wrap;
   }
-  .feature-img img{
+  .feature-img img {
     height: 1.3rem;
-   
   }
-  .feature-in{
+  .feature-in {
     display: flex;
     justify-content: space-evenly;
   }
   .steps-content img {
     width: 35%;
   }
-  .meals-recepie.first{
+  .meals-recepie.first {
     justify-self: unset;
   }
-  .meals-header{
+  .meals-header {
     margin-bottom: 4.8rem;
   }
-  .cta{
+  .cta {
     grid-template-columns: 1fr;
   }
-  .cta-img{
+  .cta-img {
     padding-bottom: 70%;
     grid-row: 1;
   }
-  .form form{
+  .form form {
     grid-template-columns: 1fr;
   }
-  .form label{
+  .form label {
     margin-bottom: 0.8rem;
   }
-  .pb-lg{
+  .pb-lg {
     padding-bottom: 4.6rem !important;
   }
-  .mr-lg{
+  .mr-lg {
     margin-top: 1.6rem !important;
   }
-  .pt-lg{
+  .pt-lg {
     padding-top: 4.8rem !important;
   }
-  .steps-header{
-    padding: 4.8rem 0 3.2rem 0
+  .steps-header {
+    padding: 4.8rem 0 3.2rem 0;
   }
-  .pricing-body, .features, .costumer{
+  .pricing-body,
+  .features,
+  .costumer {
     flex-wrap: wrap;
     justify-content: center;
   }

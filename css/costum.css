@@ -39,20 +39,21 @@ shadow:
   color: #cf711f;
 }
 
-.mobile-nav{
+.mobile-nav {
   border: none;
   padding: 1.6rem;
   background-color: transparent;
+  display: none;
 }
-.mobile-nav .mobile-nav-icon{
+.mobile-nav .mobile-nav-icon {
   color: #333;
   width: 2.4rem;
   height: 2.4rem;
 }
-.mobile-nav-icon [name="close-outline"]{
+.mobile-nav-icon[name="close"] {
   display: none;
 }
-.btn.cta-nav {
+.menu.cta-nav {
   padding: 0.9rem 1.8rem;
   color: white;
 }
@@ -552,8 +553,8 @@ ion-icon {
 .from-control:last-child {
   align-self: end;
 }
-.form-control input::placeholder{
-  color:#cf711f;
+.form-control input::placeholder {
+  color: #cf711f;
   font-family: Rubik;
 }
 .cta-img {
@@ -570,6 +571,7 @@ ion-icon {
 .footer {
   margin-left: 5rem;
   margin-right: 5rem;
+  position: relative;
 }
 .footer ion-icon {
   font-size: 3rem;
@@ -598,5 +600,24 @@ ion-icon {
 .flex-column .paragraph {
   justify-self: flex-end;
 }
-
+.move-up {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 3.2rem;
+  display: flex;
+  width: 4.8rem;
+  height: 4.8rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fae5d3;
+}
+.move-up a {
+  text-decoration: none;
+}
+.move-up ion-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
 /* *********Footer End************** */
