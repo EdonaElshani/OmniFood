@@ -104,6 +104,9 @@ shadow:
 .delivered-meal {
   color: #cf711f;
 }
+.btn-transition{
+  transform: rotate(360deg);
+}
 
 /*******HERO END********/
 

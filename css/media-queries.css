@@ -77,7 +77,10 @@
     gap: 2.4rem;
   }
   
-  
+  .open-nav button{
+    right: 4.8rem;
+    top: 2.4rem; 
+  }
   .open-nav ion-icon[name="menu"]{
     display: none;
   }
