@@ -622,5 +622,6 @@ ion-icon {
 .move-up ion-icon {
   width: 3.2rem;
   height: 3.2rem;
+  margin-left: 0;
 }
 /* *********Footer End************** */
